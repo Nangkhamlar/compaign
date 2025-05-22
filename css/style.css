@@ -42,7 +42,7 @@ h3{
     border:1px solid #ced4da;
     border-bottom: #ced4da;
 }
-.btn-header{
+.btn-footer{
     display: flex;
     justify-content: space-between;
 }
