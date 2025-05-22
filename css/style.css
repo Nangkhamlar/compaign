@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "Ancizar Serif", serif; 
+    color:#9FA0A7;
+}
+body{
+    background-color: #DBDBD9;
+}
+.compaign{
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+    padding:35px;
+    margin-top: 20px;
+}
+
+
+:root{
+    --text-color:#9FA0A7;
+    --inputtext-color:#87898F;
+    --bg-color:#ECEFF3;
+}
+h3{
+    color:black;
+}
+
+.text-card{
+    border:1px solid #ced4da;
+    padding: 10.5px;
+    border-radius: 12px;
+}
+.dot-line{
+    border:1px dotted #ced4da;
+    border-bottom: #ced4da;
+}
+
+.solid-line{
+    border:1px solid #ced4da;
+    border-bottom: #ced4da;
+}
+.btn-header{
+    display: flex;
+    justify-content: space-between;
+}
+                     
+.run-toggle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trush{
+    text-align: end;
+    align-items: end;
+}
