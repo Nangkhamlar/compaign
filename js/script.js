@@ -8,7 +8,21 @@ function myFunction(){
      let date = document.getElementById("date").value.trim();
      let spen = document.getElementById("spen").value.trim();
      let budget = document.getElementById("budget").value.trim();
+     let channel = document.getElementById("channel").value;
+     let allcustomer = document.getElementById("all-customer").value;
+     let spenSelect1 = document.getElementById("spen-select1").value;
+     let spenSelect2 = document.getElementById("spen-select2").value;
+     let budgetSelect1 = document.getElementById("budget-select1").value;
+     let budgetSelect2 = document.getElementById("budget-select2").value;
+     let check= document.getElementById("check").value;
 
+      let demoCheck =document.getElementById('demo-check');
+      let demoBudgetSelect1 =document.getElementById('demo-budget-select1');
+      let demoBudgetSelect2 =document.getElementById('demo-budget-select2');
+     let demoSpenSelect1 =document.getElementById('demo-spen-select1');
+     let demoSpenSelect2 =document.getElementById('demo-spen-select2');
+     let demoAllCustomer =document.getElementById('demo-all-customer');
+     let demoChannel =document.getElementById('demo-channel');
      let campaignName=document.getElementById("demo-campaign-name");
      let demoBrand =document.getElementById("demo-brand");
      let demoCustomer =document.getElementById("demo-customer-target");
@@ -17,6 +31,80 @@ function myFunction(){
      let demoDate =document.getElementById("demo-date");
      let demoSpen =document.getElementById("demo-spen-input");
      let demoBudget =document.getElementById("demo-budget-input");
+
+
+
+
+if (channel !== "") {
+  demoChannel.classList.remove("fail");
+  demoChannel.classList.add("success");
+
+} else {
+  demoChannel.classList.remove("success");
+  demoChannel.classList.add("fail");
+
+}
+
+if (allcustomer !== "") {
+  demoAllCustomer.classList.remove("fail");
+  demoAllCustomer.classList.add("success");
+
+} else {
+  demoAllCustomer.classList.remove("success");
+  demoAllCustomer.classList.add("fail");
+
+}
+
+if (spenSelect1 !== "") {
+  demoSpenSelect1.classList.remove("fail");
+  demoSpenSelect1.classList.add("success");
+
+} else {
+  demoSpenSelect1.classList.remove("success");
+  demoSpenSelect1.classList.add("fail");
+
+}
+
+if (spenSelect2 !== "") {
+  demoSpenSelect2.classList.remove("fail");
+  demoSpenSelect2.classList.add("success");
+
+} else {
+  demoSpenSelect2.classList.remove("success");
+  demoSpenSelect2.classList.add("fail");
+
+}
+
+if (budgetSelect1 !== "") {
+  demoBudgetSelect1.classList.remove("fail");
+  demoBudgetSelect1.classList.add("success");
+
+} else {
+  demoBudgetSelect1.classList.remove("success");
+  demoBudgetSelect1.classList.add("fail");
+
+}
+
+if (budgetSelect2 !== "") {
+  demoBudgetSelect2.classList.remove("fail");
+  demoBudgetSelect2.classList.add("success");
+
+} else {
+  demoBudgetSelect2.classList.remove("success");
+  demoBudgetSelect2.classList.add("fail");
+
+}
+if (check !== "") {
+  demoCheck.classList.remove("fail");
+  demoCheck.classList.add("success");
+
+} else {
+  demoCheck.classList.remove("success");
+  demoCheck.classList.add("fail");
+
+}
+
+
  
   if(name !== ""){
     campaignName.classList.remove("fail");

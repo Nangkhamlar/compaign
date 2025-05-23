@@ -32,13 +32,13 @@
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">Channel</label>
-                        <select class="form-select" aria-label="Default select example" id="channel" required>
+                        <select class="form-select"  aria-label="Default select example" id="channel" required>
                             <option value=""  disabled selected>Open this select menu</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
-                        <span></span>
+                       <p id="demo-channel" class="success">Choose your channel</p>
                     </div>
                 </div>
                 <div class="mb-3">
@@ -79,12 +79,13 @@
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">customers</label>
-                        <select class="form-select" aria-label="Default select example" required>
-                            <option >All customers</option>
+                        <select class="form-select" aria-label="Default select example" id="all-customer" required>
+                            <option value="" disabled selected >All customers</option>
                             <option value="1">Profeessionals</option>
                             <option value="2">Collage Students</option>
                             <option value="3">Family</option>
                         </select>
+                      <p id="demo-all-customer" class="success">Choose your customer</p>
                     </div>
 
 
@@ -96,9 +97,10 @@
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label class="form-label">Check</label>
-                        <select class="form-select w-100" aria-label="Default select example" required>
-                            <option selected>Every hour</option>
+                        <select class="form-select w-100" aria-label="Default select example" id="check" required>
+                            <option value="" disabled selected>Every hour</option>
                         </select>
+                        <p id="demo-check" class="success">Choose your hour</p>
                     </div>
                     <div class="col-md-6"></div>
                 </div>
@@ -132,14 +134,18 @@
                 <h3 class="mb-3">Create Rules</h3>
                 <div class="row mb-3">
                     <div class="col-md-7">
-                        <select class="form-select w-100" aria-label="Default select example" required>
-                            <option selected>Spen</option>
+                        <select class="form-select w-100" aria-label="Default select example" id="spen-select1" required>
+                            <option value="" disabled selected>Spen</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
                         </select>
+                        <p id="demo-spen-select1" class="success">Choose your spen</p>
                     </div>
                     <div class="col-md-2">
-                        <select class="form-select w-100" aria-label="Default select example" required>
-                            <option selected></option>
+                        <select class="form-select w-100" aria-label="Default select example" id="spen-select2" required>
+                             <option value="" disabled selected>=</option>
                         </select>
+                         <p id="demo-spen-select2" class="success">Choose your spen2</p>
                     </div>
                     <div class="col-md-2">
                         <input type="text" class="form-control" id="spen" placeholder="$200" required>
@@ -151,14 +157,16 @@
 
                 <div class="row mb-3">
                     <div class="col-md-7">
-                        <select class="form-select w-100" aria-label="Default select example" required>
-                            <option selected>Increase budget</option>
+                        <select class="form-select w-100" aria-label="Default select example" id="budget-select1" required>
+                            <option value="" selected disabled>Increase budget</option>
                         </select>
+                        <p id="demo-budget-select1" class="success">Choose yout budget</p>
                     </div>
                     <div class="col-md-2">
-                        <select class="form-select w-100" aria-label="Default select example" required>
-                            <option selected>$</option>
+                        <select class="form-select w-100" aria-label="Default select example" id="budget-select2"  required>
+                            <option value="" selected disabled>$</option>
                         </select>
+                         <p id="demo-budget-select2" class="success">Choose yout budget2</p>
                     </div>
                     <div class="col-md-2">
                         <input type="text" class="form-control" id="budget" placeholder="30" required>
