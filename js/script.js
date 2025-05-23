@@ -9,9 +9,9 @@ function myFunction(){
      let spen = document.getElementById("spen").value.trim();
      let budget = document.getElementById("budget").value.trim();
 
-     let demo1 =document.getElementById("demo1");
-     let demo2 =document.getElementById("demo2");
-     let demo3 =document.getElementById("demo3");
+     let campaignName=document.getElementById("demo-campaign-name");
+     let demoBrand =document.getElementById("demo-brand");
+     let demoCustomer =document.getElementById("demo-customer-target");
      let demoEmail =document.getElementById("demo-email-only");
      let demoSms =document.getElementById("demo-sms-only");
      let demoDate =document.getElementById("demo-date");
@@ -19,30 +19,30 @@ function myFunction(){
      let demoBudget =document.getElementById("demo-budget-input");
  
   if(name !== ""){
-    demo1.classList.remove("fail");
-    demo1.classList.add("success");
+    campaignName.classList.remove("fail");
+    campaignName.classList.add("success");
     } else {
-    demo1.classList.remove("success");
-    demo1.classList.add("fail");
+    campaignName.classList.remove("success");
+    campaignName.classList.add("fail");
     
   } 
 
    if(brand !== ""){
-     demo2.classList.remove("fail");
-     demo2.classList.add("success");
+      demoBrand.classList.remove("fail");
+      demoBrand.classList.add("success");
     
       } else {
-    demo2.classList.remove("success");
-    demo2.classList.add("fail");
+     demoBrand.classList.remove("success");
+     demoBrand.classList.add("fail");
   } 
 
    if(customer !== ""){
-     demo3.classList.remove("fail");
-     demo3.classList.add("success");
+     demoCustomer.classList.remove("fail");
+     demoCustomer.classList.add("success");
     
     } else {
-    demo3.classList.remove("success");
-    demo3.classList.add("fail");
+    demoCustomer.classList.remove("success");
+    demoCustomer.classList.add("fail");
   } 
    
     if(email !== ""){
