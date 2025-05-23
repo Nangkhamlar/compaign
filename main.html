@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Validation</title>
+  <style>
+    .success { color: green; }
+    .fail { color: red; }
+  </style>
+</head>
+<body>
+
+  <input type="text" id="input1" placeholder="Enter something">
+  <p id="message1"></p>
+
+  <input type="text" id="input2" placeholder="Enter something">
+  <p id="message2"></p>
+
+  <button onclick="validateInputs()">Validate</button>
+
+  <script>
+    function validateInputs() {
+      const input1 = document.getElementById("input1").value.trim();
+      const input2 = document.getElementById("input2").value.trim();
+
+      const message1 = document.getElementById("message1");
+      const message2 = document.getElementById("message2");
+
+      if (input1 !== "") {
+        message1.textContent = "Success: Input 1 has text.";
+        message1.className = "success";
+      } else {
+        message1.textContent = "Fail: Input 1 is blank.";
+        message1.className = "fail";
+      }
+
+      if (input2 !== "") {
+        message2.textContent = "Success: Input 2 has text.";
+        message2.className = "success";
+      } else {
+        message2.textContent = "Fail: Input 2 is blank.";
+        message2.className = "fail";
+      }
+    }
+  </script>
+
+</body>
+</html>

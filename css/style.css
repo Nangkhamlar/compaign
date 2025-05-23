@@ -56,3 +56,10 @@ h3{
     text-align: end;
     align-items: end;
 }
+
+.success { 
+    display: none;
+   }
+.fail { 
+    display: block;
+    color: red;}
